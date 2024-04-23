@@ -15,13 +15,6 @@ def reverseList(head):
         curr = next_temp       # 移动curr到下一个节点
     return prev  # prev现在指向新的头节点
 
-def printList(head):
-    current = head
-    while current:
-        print(current.val, end=" -> ")
-        current = current.next
-    print("None")
-
 # 创建链表 1 -> 2 -> 3 -> 4 -> 5
 node1 = ListNode(1)
 node2 = ListNode(2)
@@ -33,10 +26,7 @@ node2.next = node3
 node3.next = node4
 node4.next = node5
 
-# 使用迭代方法反转链表
-reversed_head_iterative = reverseList(node1)
-printList(node1)
-printList(reverseList)
+
 
 
 
